@@ -25,6 +25,10 @@
                 <li><strong>Stazione di Arrivo</strong>: {{ $train->stazione_arrivo }}</li>
                 <li><strong>Orario di Partenza</strong>: {{ $train->orario_partenza }}</li>
                 <li><strong>Orario di Arrivo</strong>: {{ $train->orario_arrivo }}</li>
+                <li><strong>Codice treno</strong>: {{ $train->codice_treno }}</li>
+                <li><strong>Numero Carrozze</strong>: {{ $train->numero_carrozze }}</li>
+                <li><strong>In Orario</strong>: {{ $train->in_orario }}</li>
+                <li><strong>Cancellato</strong>: {{ $train->cancellato }}</li>
             </ul>
         @endforeach
     </div>
