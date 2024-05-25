@@ -19,16 +19,15 @@
         <h1 class="mt-5 mb-5 text-center">Elenco Treni in Partenza</h1>
         @foreach($departingTrains as $train)
             <ul class="mt-5 mb-5">
-                <li><strong>Azienda</strong>: {{ $train->azienda }}</li>
-                <li><strong>Codice Treno</strong>: {{ $train->codice_treno }}</li>
-                <li><strong>Stazione di Partenza</strong>: {{ $train->stazione_partenza }}</li>
-                <li><strong>Stazione di Arrivo</strong>: {{ $train->stazione_arrivo }}</li>
-                <li><strong>Orario di Partenza</strong>: {{ $train->orario_partenza }}</li>
-                <li><strong>Orario di Arrivo</strong>: {{ $train->orario_arrivo }}</li>
-                <li><strong>Codice treno</strong>: {{ $train->codice_treno }}</li>
-                <li><strong>Numero Carrozze</strong>: {{ $train->numero_carrozze }}</li>
-                <li><strong>In Orario</strong>: {{ $train->in_orario }}</li>
-                <li><strong>Cancellato</strong>: {{ $train->cancellato }}</li>
+                <li><strong>Company</strong>: {{ $train->company }}</li>
+                <li><strong>Train Code</strong>: {{ $train->train_code }}</li>
+                <li><strong>Departure Station</strong>: {{ $train->departure_station }}</li>
+                <li><strong>Arrival Station</strong>: {{ $train->arrival_station }}</li>
+                <li><strong>Departure Time</strong>: {{ $train->departure_time }}</li>
+                <li><strong>Arrival Time</strong>: {{ $train->arrival_time }}</li>
+                <li><strong>Number of carriages</strong>: {{ $train->carriages_numbernumero_carrozze }}</li>
+                <li><strong>Punctual</strong>: {{ $train->punctual }}</li>
+                <li><strong>Deleeted</strong>: {{ $train->deleted }}</li>
             </ul>
         @endforeach
     </div>
