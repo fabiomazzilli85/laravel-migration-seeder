@@ -10,7 +10,7 @@ class TrainController extends Controller
     public function index()
     {
         $today = Carbon::now()->toDateString();
-        $departingTrains = Train::whereDate('orario_partenza', $today)->get();
+        $departingTrains = Train::whereDate('departure_time', $today)->get();
 
         return view('index', compact('departingTrains'));
     }
