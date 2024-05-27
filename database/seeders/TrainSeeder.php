@@ -25,10 +25,10 @@ class TrainSeeder extends Seeder
             $new_train->arrival_station = $faker->city();
             $new_train->departure_time = $faker->dateTime(); 
             $new_train->arrival_time = $faker->dateTime();   
-            $new_train->train_code = $faker->randomNumber(5, true);
+            $new_train->train_code = $faker->unique()->randomNumber(5, true);
             $new_train->carriages_number = $faker->numberBetween(1, 11);
             $new_train->punctual = $faker->boolean();
-            $new_train->deleted = $faker->boolean();
+            $new_train->deleted = !$new_train->punctual;
 
             // salviamo i dati con il metodo save()
             $new_train->save();
