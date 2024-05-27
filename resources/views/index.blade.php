@@ -25,7 +25,7 @@
                 <li><strong>Arrival Station</strong>: {{ $train->arrival_station }}</li>
                 <li><strong>Departure Time</strong>: {{ $train->departure_time }}</li>
                 <li><strong>Arrival Time</strong>: {{ $train->arrival_time }}</li>
-                <li><strong>Number of carriages</strong>: {{ $train->carriages_numbernumero_carrozze }}</li>
+                <li><strong>Number of carriages</strong>: {{ $train->carriages_number }}</li>
                 <li><strong>Punctual</strong>: {{ $train->punctual }}</li>
                 <li><strong>Deleeted</strong>: {{ $train->deleted }}</li>
             </ul>
